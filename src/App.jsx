@@ -1,11 +1,9 @@
-import { BrowserRouter } from "react-router-dom";
-
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-      <div className=" font-bold">test</div>
-    </BrowserRouter>
+    <>
+      <h1>Litte Learners</h1>
+    </>
   );
-}
+};
 
 export default App;
