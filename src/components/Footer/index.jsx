@@ -33,8 +33,23 @@ const Footer = () => {
     },
   ];
 
+  const mediaSosial = [
+    {
+      id: 1,
+      name: "facebook",
+    },
+    {
+      id: 2,
+      name: "twiter",
+    },
+    {
+      id: 3,
+      name: "linkedin",
+    },
+  ];
+
   return (
-    <footer className="container md:w-full w-[95%] mx-auto px-6 md:px-20 py-10 md:py-20 font-outfit border border-grey-15 rounded-xl shadow-xl">
+    <footer className="container md:w-full w-[95%] mx-auto px-6 md:px-20 pt-10 pb-5 md:py-20 font-outfit border border-grey-15 rounded-xl mb-5 flex flex-col gap-[30px] md:gap-[50px] shadow-[6px_6px_0px_1px_#1E1E1E]">
       <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20">
         {/* Left Side */}
         <section className="md:w-1/2 flex flex-col gap-10">
@@ -96,6 +111,31 @@ const Footer = () => {
             </div>
           ))}
         </section>
+      </div>
+      <div className="flex flex-col gap-4 md:gap-[30px] items-center w-full">
+        <hr className=" border-t-[1px] w-full" />
+        <div className="flex flex-col md:flex-row gap-5 justify-between items-center self-stretch">
+          <div className="flex gap-[6px] md:gap-4 items-start">
+            <span>Terms of Service</span> |<span>Privacy Policy</span> |{" "}
+            <span>Cookie Policy</span>
+          </div>
+          <div className="flex gap-4 items-start">
+            {mediaSosial.map((data) => (
+              <span
+                key={data.id}
+                className=" p-4  flex items-center justify-center bg-orange-95 border rounded-md"
+              >
+                <img
+                  src={`/assets/${data.name}.svg`}
+                  alt={data.name}
+                  className=" h-6 w-6"
+                />
+              </span>
+            ))}
+          </div>
+        </div>
+        <hr className=" border-t-[1px] w-full" />
+        <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
       </div>
     </footer>
   );
