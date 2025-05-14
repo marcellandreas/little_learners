@@ -1,9 +1,12 @@
+import ContainerCard from "../components/Card/ContainerCard";
 import MainLayout from "../Layout/MainLayout";
 
 const AboutUs = () => {
   return (
     <MainLayout>
-      <div>AboutUs</div>
+      <section className="col-span-12">
+        <ContainerCard />
+      </section>
     </MainLayout>
   );
 };
