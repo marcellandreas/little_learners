@@ -5,11 +5,11 @@ const Navbar = () => {
   const [toogleNavbar, setToggleNavbar] = useState(false);
   const menuItems = [
     { name: "Home", link: "/" },
-    { name: "About Us", link: "about-us" },
-    { name: "Academics", link: "academics" },
-    { name: "Admissions", link: "admissions" },
-    { name: "Student Life", link: "student-life" },
-    { name: "Contacts", link: "contacts" },
+    { name: "About Us", link: "/about-us" },
+    { name: "Academics", link: "/academics" },
+    { name: "Admissions", link: "/admissions" },
+    { name: "Student Life", link: "/student-life" },
+    { name: "Contacts", link: "/contacts" },
   ];
 
   const handleToogleNavbar = () => {
