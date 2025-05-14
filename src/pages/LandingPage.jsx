@@ -14,8 +14,8 @@ const LandingPage = () => {
       <Banner />
       <OurBenefits />
       <OurTestimonials />
-      <OurPages />
       <FAQ />
+      {/* <OurPages /> */}
     </MainLayout>
   );
 };

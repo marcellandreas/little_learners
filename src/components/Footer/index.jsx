@@ -49,12 +49,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="container md:w-full w-[95%] mx-auto px-6 md:px-20 pt-10 pb-5 md:py-20 font-outfit border border-grey-15 rounded-xl mb-5 flex flex-col gap-[30px] md:gap-[50px] shadow-[6px_6px_0px_1px_#1E1E1E]">
-      <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20">
-        {/* Left Side */}
-        <section className="md:w-1/2 flex flex-col gap-10">
-          <article className="flex flex-col gap-5">
-            <Link to="/" className="flex items-center gap-2">
+    <footer className="grid mb-10  lg:mx-10 lg:w-auto mx-auto w-[95%] pd:px-20 px-[30px]  gap-[30px] lg:gap-10 2xl:gap-[50px] pt-[60px] 2xl:pt-[100px] lg:pt-20 lg:pb-10 rounded-xl border-2 border-grey-15 bg-white shadow-[6px_6px_0px_1px_#1E1E1E]">
+      <div className=" col-span-6 flex flex-col  gap-10 lg:gap-20  lg:grid lg:grid-cols-12">
+        <section className="flex  lg:col-span-5  flex-col items-center gap-10">
+          <article className="flex flex-col gap-10">
+            <Link to="/" className="flex items-center gap-4">
               <img
                 src="/logo.svg"
                 alt="Little Learners Logo"
@@ -62,47 +61,51 @@ const Footer = () => {
               />
               <p className="text-xl font-semibold">Little Learners</p>
             </Link>
-            <p className="text-base md:text-lg text-gray-700">
+            <p className="text-base 2xl:text-xl text-grey-30 font-medium text-center lg:text-left font-outfit">
               We believe in the power of play to foster creativity,
-              <br />
               problem-solving skills, and imagination.
             </p>
           </article>
 
-          <article className="flex flex-col gap-4 text-gray-800">
-            <div className="flex items-center gap-3">
-              <EnvelopeIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-600" />
-              <p className="text-base md:text-xl font-medium">
-                hello@littlelearners.com
-              </p>
-            </div>
-            <div className="flex items-center gap-3">
-              <PhoneArrowDownLeftIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-600" />
-              <p className="text-base md:text-xl font-medium">
-                +62 812-3456-7890
-              </p>
-            </div>
-            <div className="flex items-center gap-3">
-              <MapPinIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-600" />
-              <p className="text-base md:text-xl font-medium">
-                Jl. Belajar No. 123, Jakarta
-              </p>
-            </div>
+          <article className="flex flex-col gap-5  w-full ">
+            {[
+              { type: "email", text: "hello@littlelearners.com" },
+              { type: "phone", text: "+62 812-3456-7890" },
+              { type: "address", text: "Jl. Belajar No. 123, Jakarta" },
+            ].map((item, index) => {
+              const iconMap = {
+                email: <EnvelopeIcon className="w-full h-full" />,
+                phone: <PhoneArrowDownLeftIcon className="w-full h-full" />,
+                address: <MapPinIcon className="w-full h-full" />,
+              };
+
+              return (
+                <div key={index} className="flex items-center gap-2 rounded-md">
+                  <div className="w-10 h-10 rounded border-2 border-grey-15 bg-orange-97 p-[6px]">
+                    {iconMap[item.type]}
+                  </div>
+                  <p className="font-outfit text-grey-15 text-base 2xl:text-xl font-medium">
+                    {item.text}
+                  </p>
+                </div>
+              );
+            })}
           </article>
         </section>
-
-        {/* Right Side */}
-        <section className="md:w-1/2 flex  justify-around flex-wrap md:justify-between gap-6 ">
+        <section className="grid grid-cols-8  lg:col-span-7 gap-[30px] lg:gap-5 ">
           {MenuFooter.map((section) => (
-            <div key={section.id} className="flex flex-col gap-4 min-w-[120px]">
-              <p className="text-lg font-semibold text-gray-900 cursor-pointer">
+            <div
+              key={section.id}
+              className=" col-span-4 lg:col-span-2 flex flex-col gap-5"
+            >
+              <p className=" text-grey-15 font-outfit text-base font-semibold">
                 {section.Title}
               </p>
-              <div className="flex flex-col gap-2 text-base text-gray-600">
+              <div className=" text-grey-20 lg:flex lg:gap-4 2xl:text-xl lg:flex-col text-base font-medium cursor-pointer ">
                 {section.content.map((item, index) => (
                   <p
                     key={`${section.id}-${index}`}
-                    className="hover:text-blue-500 transition cursor-pointer"
+                    className=" text-base font-outfit font-medium 2xl:text-xl text-grey-20"
                   >
                     {item}
                   </p>
@@ -112,30 +115,45 @@ const Footer = () => {
           ))}
         </section>
       </div>
-      <div className="flex flex-col gap-4 md:gap-[30px] items-center w-full">
-        <hr className=" border-t-[1px] w-full" />
-        <div className="flex flex-col md:flex-row gap-5 justify-between items-center self-stretch">
-          <div className="flex gap-[6px] md:gap-4 items-start">
-            <span>Terms of Service</span> |<span>Privacy Policy</span> |{" "}
-            <span>Cookie Policy</span>
+      <div className="col-span-6 flex flex-col   gap-4 lg:gap-5">
+        <hr className="h-[1px] w-full" />
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
+          <div className="flex gap-[2px]">
+            {[
+              "Terms of Service",
+              "|",
+              "Privacy Policy",
+              "|",
+              "Cookie Policy",
+            ].map((item, index) => (
+              <Link to="/" key={index}>
+                <p className=" text-grey-20 text-sm lg:text-base 2xl:text-xl font-medium font-outfit">
+                  {item}
+                </p>
+              </Link>
+            ))}
           </div>
-          <div className="flex gap-4 items-start">
-            {mediaSosial.map((data) => (
-              <span
-                key={data.id}
-                className=" p-4  flex items-center justify-center bg-orange-95 border rounded-md"
+          <div className="flex gap-[10px]">
+            {mediaSosial.map((item) => (
+              <Link
+                to="/"
+                key={item.id}
+                className="p-3 rounded-md border-2 
+              border-grey-15 bg-orange-97 hover:bg-orange-95 transition-all duration-300"
               >
                 <img
-                  src={`/assets/${data.name}.svg`}
-                  alt={data.name}
-                  className=" h-6 w-6"
+                  src={`/assets/${item.name}.svg`}
+                  alt={item.name}
+                  className="w-6 h-6"
                 />
-              </span>
+              </Link>
             ))}
           </div>
         </div>
-        <hr className=" border-t-[1px] w-full" />
-        <p>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
+        <hr className="h-[1px] w-full" />
+        <p className=" text-grey-40 font-outfit text-center text-sm font-medium lg:text-base 2xl:text-xl">
+          Copyright © [2023] Little Learners Academy. All rights reserved.
+        </p>
       </div>
     </footer>
   );
