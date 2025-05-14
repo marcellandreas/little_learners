@@ -1,4 +1,4 @@
-import FeatureSection from "../FeatureSection";
+import { SubContainer } from "../../UI/SubContainer";
 
 const BenefitsData = [
   {
@@ -68,9 +68,9 @@ const CardBenefits = ({ id, icon, title, description }) => {
 const OurBenefits = () => {
   return (
     <section className="flex flex-col 2xl:gap-[100px] md:gap-[80px] gap-[50px] items-start col-span-12">
-      <FeatureSection
+      <SubContainer
         title="Our Benefits"
-        subtitle="Children Deserve Bright Future"
+        heading="Children Deserve Bright Future"
         description="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
       />
       <section className="flex flex-col md:grid grid-cols-12 md:gap-x-10 gap-[60px]">

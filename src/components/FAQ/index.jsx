@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FeatureSection from "../FeatureSection";
+import { SubContainer } from "../../UI/SubContainer";
 
 const faqData = [
   {
@@ -52,10 +52,10 @@ const FAQ = () => {
   };
 
   return (
-    <section className="flex flex-col lg:gap-[100px] md:gap-[80px] gap-[50px] items-start col-span-12">
-      <FeatureSection
+    <section className="flex flex-col lg:gap-[100px] md:gap-[80px] gap-[50px] items-start col-span-12 ">
+      <SubContainer
         title="Frequently Asked Questions"
-        subtitle="Solutions For The Doubts"
+        heading="Solutions For The Doubts"
         description="Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education."
       />
 

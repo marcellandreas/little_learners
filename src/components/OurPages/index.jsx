@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureSection from "../FeatureSection";
+import { SubContainer } from "../../UI/SubContainer";
 
 const CardPages = () => {
   return (
@@ -48,8 +48,8 @@ const CardPages = () => {
 const OurPages = () => {
   return (
     <section className="flex flex-col 2xl:gap-[100px] md:gap-[80px] gap-[50px] items-start col-span-12">
-      <FeatureSection
-        subtitle="Explore More"
+      <SubContainer
+        heading="Explore More"
         title="Navigate through our Pages"
         description="Your gateway to discovering a wealth of valuable information about our
       kindergarten school, Feel free to explore and learn more about the

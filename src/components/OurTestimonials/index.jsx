@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import FeatureSection from "../FeatureSection";
 
 // Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { SubContainer } from "../../UI/SubContainer";
 
 const TestimonialsData = [
   {
@@ -129,8 +129,8 @@ const OurTestimonials = () => {
 
   return (
     <section className="flex flex-col items-start gap-[50px] md:gap-[80px] 2xl:gap-[100px] col-span-12">
-      <FeatureSection
-        subtitle="Their Happy Words 🤗"
+      <SubContainer
+        heading="Their Happy Words 🤗"
         title="Our Testimonials"
         description="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
