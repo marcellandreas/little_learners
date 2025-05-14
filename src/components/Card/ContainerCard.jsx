@@ -1,6 +1,8 @@
-const ContainerCard = () => {
+const ContainerCard = ({ className }) => {
   return (
-    <section className="flex relative py-[50px] md:pt-[100px] 2xl:pt-[150px] 2xl:px-[120px] md:px-20 px-[30px] flex-col md:flex-row justify-center items-center gap-5 md:gap-[50px] rounded-xl border-2 border-grey-15 shadow-[6px_6px_0px_1px_#1E1E1E] bg-white w-full">
+    <section
+      className={`flex relative py-[50px] md:pt-[100px] 2xl:pt-[150px] 2xl:px-[120px] md:px-20 px-[30px] flex-col md:flex-row justify-center items-center gap-5 md:gap-[50px] rounded-xl border-2 border-grey-15 shadow-[6px_6px_0px_1px_#1E1E1E] bg-white w-full ${className}`}
+    >
       <article className="absolute top-0  left-0 ">
         <img src="/AbstractDesign.svg" alt="abstrak image" />
       </article>
