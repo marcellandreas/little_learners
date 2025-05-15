@@ -3,7 +3,7 @@ import ContainerCard from "../components/Card/ContainerCard";
 import MainLayout from "../Layout/MainLayout";
 import { SubContainer } from "../UI/SubContainer";
 import teamMemberData from "../data/TeamMembers.json";
-import { data } from "react-router-dom";
+import teamHistoryData from "../data/OurHistory.json";
 
 const AboutUs = () => {
   return (
@@ -36,7 +36,53 @@ const AboutUs = () => {
           title="Our History"
           description="Founded with a passion for early education in 2005, our kindergarten school boasts a rich history of empowering young learners to reach their potential through innovative teaching methods and a supportive learning environment"
         />
+        <div className="flex pt-[50px] pb-[30px] px-[30px] lg:p-[100px] 2xl:p-[150px] rounded-xl border-2 border-grey-15  shadow-[4px_4px_0px_1px_#1E1E1E] bg-white">
+          {/* line */}
+          <div className="flex w-[19.416px]  pt-[35px] pb-[270px] md:pb-[15%] px-0 flex-col items-center">
+            <div className="flex px-[6px] py-0 justify-center items-center gap-[10px] flex-1 bg-orange-80">
+              <div className="w-[2px] bg-black h-full"></div>
+            </div>
+          </div>
+
+          {/* cards */}
+          <div className="flex flex-col  items-start gap-[50px] lg:gap-[80px] 2xl:gap-[100px] flex-1">
+            {/* card */}
+            {teamHistoryData.map((item) => (
+              <div className="flex flex-col justify-center   items-start gap-[30px]">
+                <div className="flex items-center ml-[-20px] ">
+                  <div className="flex w-[62px] h-5 items-center">
+                    <img src="/assets/circle.svg" alt="" className="h-5 w-5" />
+                    <div className="flex py-[6px] pl-0 justify-center items-center gap-[10px] flex-1 bg-orange-80">
+                      <div className="h-[2px] w-4 bg-black"></div>
+                    </div>
+                    <img src="/assets/circle.svg" alt="" className="h-5 w-5" />
+                  </div>
+                  <div className="flex py-5 px-6 items-center gap-5 rounded-xl border-2 border-grey-15 bg-white shadow-[4px_4px_0_1px_#1e1e1e]">
+                    <img
+                      src="/AbstractDesign.svg"
+                      alt="abstrak desain"
+                      className="w-[50px] h-[50px]"
+                    />
+                    <span className=" text-grey-10 font-raleway text-4xl font-bold">
+                      {item.year}
+                    </span>
+                  </div>
+                </div>
+                {/* text container */}
+                <div className="flex pl-11 flex-col justify-center gap-3">
+                  <h3 className=" text-grey-10 font-raleway text-xl lg:text-2xl 2xl:text-3xl font-bold">
+                    {item.title}
+                  </h3>
+                  <p className=" text-grey-20 font-outfit text-base 2xl:text-xl font-medium">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
+
       <section className="flex flex-col gap-[50px] md:gap-20 2xl:gap-[100px] col-span-12">
         <SubContainer
           heading="Our Teachers With Experties"
