@@ -53,11 +53,11 @@ const CardBenefits = ({ id, icon, title, description }) => {
           <img src={icon} alt={`${id}-${title} icon`} className="w-6 h-6" />
         </div>
       </div>
-      <div className="flex h-full pt-[50px] md:px-10 md:pt-[50px] md:pb-10 pb-[30px] pl-[30px] pr-[40px] flex-col gap-4 rounded-xl border-2 border-grey-15 shadow-[4px_4px_0px_1px_#1E1E1E]">
-        <h3 className=" text-[22px] md:text-[24px] xl:text-[28px]  font-raleway text-grey-10 font-bold">
+      <div className="flex h-full pt-[50px] pb-[30px] px-[30px] md:px-10 md:pt-[60px] md:pb-10  flex-col gap-4 rounded-xl border-2 border-grey-15 shadow-[4px_4px_0px_1px_#1E1E1E]">
+        <h3 className=" text-[22px] md:text-[24px] 2xl:text-[28px] md:leading-[130%]  font-raleway text-grey-10 font-bold">
           {title}
         </h3>
-        <p className=" text-grey-30 font-outfit text-base font-medium">
+        <p className=" text-grey-30 font-outfit text-base 2xl:text-xl font-medium">
           {description}
         </p>
       </div>
