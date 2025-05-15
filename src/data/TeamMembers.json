@@ -2,42 +2,42 @@
   {
     "id": 1,
     "name": "Ms. Sarah Anderson",
-    "profileImage": "/team/sarah.jpg",
+    "profileImage": "/assets/teamMembers/sarah.png",
     "qualification": "Founder & Director",
     "description": "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
   },
   {
     "id": 2,
     "name": "Mr. James Thompson",
-    "profileImage": "/team/james.jpg",
+    "profileImage": "/assets/teamMembers/david.png",
     "qualification": "Lead Teacher",
     "description": "Mr. James is a dedicated teacher who specializes in early childhood education. He believes in fostering creativity and critical thinking in children through hands-on learning experiences."
   },
   {
     "id": 3,
     "name": "Ms. Emily Johnson",
-    "profileImage": "/team/emily.jpg",
+    "profileImage": "/assets/teamMembers/emily.png",
     "qualification": "Assistant Teacher",
     "description": "Ms. Emily is known for her patience and kindness. She works closely with children to support their individual learning needs and helps them develop social skills through play."
   },
   {
     "id": 4,
     "name": "Mr. David Brown",
-    "profileImage": "/team/david.jpg",
+    "profileImage": "/assets/teamMembers/michael.png",
     "qualification": "Special Education Teacher",
     "description": "Mr. David is a certified special education teacher with a passion for inclusive education. He works with children of all abilities to ensure that every child has the opportunity to thrive."
   },
   {
     "id": 5,
     "name": "Ms. Laura Wilson",
-    "profileImage": "/team/laura.jpg",
+    "profileImage": "/assets/teamMembers/jessica.png",
     "qualification": "Curriculum Coordinator",
     "description": "Ms. Laura is responsible for developing and implementing our curriculum. She is dedicated to creating engaging and developmentally appropriate learning experiences for all children."
   },
   {
     "id": 6,
     "name": "Mr. Michael Smith",
-    "profileImage": "/team/michael.jpg",
+    "profileImage": "/assets/teamMembers/william.png",
     "qualification": "Physical Education Teacher",
     "description": "Mr. Michael is an enthusiastic physical education teacher who promotes healthy lifestyles through fun and active play. He encourages children to develop their motor skills and teamwork abilities."
   }
