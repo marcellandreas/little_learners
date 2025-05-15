@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Resilience and Future Horizons",
+    "description": "Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow.",
+    "year": 2023,
+    "icon": "/vision.svg"
+  },
+  {
+    "id": 2,
+    "title": "A Legacy of Excellence",
+    "description": "Over the years, we have built a legacy of excellence in early childhood education. Our commitment to nurturing young minds and fostering a love for learning has made us a trusted partner for families in our community.",
+    "year": 2017,
+    "icon": "/vision.svg"
+  },
+  {
+    "id": 3,
+    "title": "Innovative Approaches to Learning",
+    "description": "We have embraced innovative approaches to learning, integrating technology and hands-on experiences into our curriculum. This has allowed us to create engaging and interactive learning environments that inspire curiosity and creativity.",
+    "year": 2015,
+    "icon": "/vision.svg"
+  },
+  {
+    "id": 4,
+    "title": "Community Partnerships",
+    "description": "Building strong partnerships with local organizations and families has been a cornerstone of our success. Together, we have created a supportive network that enhances the educational experience for our children.",
+    "year": 2012,
+    "icon": "/vision.svg"
+  }
+]
