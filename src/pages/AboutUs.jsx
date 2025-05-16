@@ -5,12 +5,17 @@ import { SubContainer } from "../UI/SubContainer";
 import teamMemberData from "../data/TeamMembers.json";
 import teamHistoryData from "../data/OurHistory.json";
 import CardContent from "../UI/CardContent";
-import { MdArrowBack, MdArrowForward, MdArrowRight } from "react-icons/md";
+import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const AboutUs = () => {
   return (
     <MainLayout>
-      <ContainerCard className="col-span-12" />
+      <ContainerCard
+        subtitle="Overview"
+        title="Welcome to Little Learners Academy"
+        description="A leading kinder garden school dedicated to providing a nurturing and stimulating environment for young learners. With a commitment to excellence in early education, we believe in shaping curious minds and building a strong foundation for a lifelong love of learning. Our holistic approach fosters intellectual, social, emotional, and physical development, ensuring that each child reaches their full potential."
+        className="col-span-12"
+      />
       <section className="flex flex-col gap-[50px] md:gap-20 2xl:gap-[100px] col-span-12">
         <SubContainer
           heading="Mission & Visions"
