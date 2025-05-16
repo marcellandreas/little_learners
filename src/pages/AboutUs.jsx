@@ -4,6 +4,8 @@ import MainLayout from "../Layout/MainLayout";
 import { SubContainer } from "../UI/SubContainer";
 import teamMemberData from "../data/TeamMembers.json";
 import teamHistoryData from "../data/OurHistory.json";
+import CardContent from "../UI/CardContent";
+import { MdArrowBack, MdArrowForward, MdArrowRight } from "react-icons/md";
 
 const AboutUs = () => {
   return (
@@ -29,6 +31,26 @@ const AboutUs = () => {
           title="Our Awards and Recognitions"
           description="Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students."
         />
+        <div className="flex flex-col gap-[30px] lg:gap-10 2xl:gap-[50px]">
+          <div className="grid grid-cols-3 gap-10 xl:gap-[30px] 2xl:gap-10">
+            <CardContent classNameCard="col-span-3 md:col-span-1" />
+            <CardContent classNameCard="col-span-3 md:col-span-1" />
+            <CardContent classNameCard="col-span-3 md:col-span-1" />
+          </div>
+          <div className="flex items-center justify-between">
+            <p className=" text-grey-10 font-raleway text-lg 2xl:text-2xl font-bold">
+              8 More Awards
+            </p>
+            <div className="flex gap-4">
+              <button className="p-3 rounded-md border-2 border-grey-20 bg-white">
+                <MdArrowBack className="w-6 h-6" />
+              </button>
+              <button className="p-3 rounded-md border-2 border-grey-20 bg-white">
+                <MdArrowForward className="w-6 h-6" />
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="flex flex-col gap-[50px] md:gap-20 2xl:gap-[100px] col-span-12">
         <SubContainer
