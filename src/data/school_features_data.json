@@ -1,0 +1,138 @@
+{
+  "whatStudentsLearn": {
+    "title": "What Students Learn",
+    "description": "At Little Learners Academy, we strive to cultivate a love for learning and equip children with essential skills for their future success. Our academic programs cover a wide range of subjects, allowing students to develop a strong foundation and discover their interests. Some key areas of learning include:",
+    "subjects": [
+      {
+        "title": "Language Arts",
+        "description": "Reading, writing, storytelling, and communication skills.",
+        "image": "/assets/StudentsLearn/LanguageArts.svg"
+      },
+      {
+        "title": "Mathematics",
+        "description": "Number sense, basic operations, problem-solving, and logic.",
+        "image": "/assets/StudentsLearn/Mathematics.svg"
+      },
+      {
+        "title": "Science",
+        "description": "Exploring the natural world through hands-on experiments and investigations.",
+        "image": "/assets/StudentsLearn/Science.svg"
+      },
+      {
+        "title": "Social Studies",
+        "description": "Cultivating an understanding of diverse cultures and communities.",
+        "image": "/assets/StudentsLearn/SocialStudies.svg"
+      },
+      {
+        "title": "Arts and Crafts",
+        "description": "Encouraging creativity through various art forms and crafts.",
+        "image": "/assets/StudentsLearn/ArtsAndCrafts.svg"
+      },
+      {
+        "title": "Physical Education",
+        "description": "Promoting physical fitness, coordination, and teamwork.",
+        "image": "/assets/StudentsLearn/PhysicalEducation.svg"
+      }
+    ]
+  },
+  "ourRoomsGallery": {
+    "title": "Our Rooms Gallery",
+    "description": "Step into our Gallery and immerse yourself in a visual journey of cherished moments and unforgettable experiences at our kindergarten school.",
+    "categories": [
+      "All",
+      "Classrooms",
+      "Library",
+      "Science Lab",
+      "Computer Lab",
+      "Garden and Nature Area"
+    ],
+    "sections": [
+      {
+        "name": "Classrooms",
+        "description": "Our well-equipped classrooms are designed to provide a nurturing and stimulating learning environment. Each classroom is thoughtfully arranged to inspire creativity, curiosity, and engagement.",
+        "image": [
+          "/assets/StudentsLearn/Classrooms/1.png",
+          "/assets/StudentsLearn/Classrooms/2.png",
+          "/assets/StudentsLearn/Classrooms/3.png",
+          "/assets/StudentsLearn/Classrooms/4.png"
+        ]
+      },
+      {
+        "name": "Library",
+        "description": "Our expansive library is a treasure trove of books, fostering a love for reading and supporting students’ literacy development.",
+        "image": [
+          "/assets/StudentsLearn/Library/1.png",
+          "/assets/StudentsLearn/Library/2.png",
+          "/assets/StudentsLearn/Library/3.png",
+          "/assets/StudentsLearn/Library/4.png"
+        ]
+      },
+      {
+        "name": "Science Lab",
+        "description": "Our hands-on science lab allows students to conduct experiments and explore scientific concepts in a fun and interactive way.",
+        "image": [
+          "/assets/StudentsLearn/ScienceLab/1.png",
+          "/assets/StudentsLearn/ScienceLab/2.png",
+          "/assets/StudentsLearn/ScienceLab/3.png",
+          "/assets/StudentsLearn/ScienceLab/4.png"
+        ]
+      },
+      {
+        "name": "Computer Lab",
+        "description": "Equipped with age-appropriate technology, the computer lab enhances students' digital literacy and computational skills",
+        "image": [
+          "/assets/StudentsLearn/ComputerLab/1.png",
+          "/assets/StudentsLearn/ComputerLab/2.png",
+          "/assets/StudentsLearn/ComputerLab/3.png",
+          "/assets/StudentsLearn/ComputerLab/4.png"
+        ]
+      },
+      {
+        "name": "Garden and Nature Area",
+        "description": "Our garden and nature area offer an opportunity for children to connect with nature and learn about plants and the environment.",
+        "image": [
+          "/assets/StudentsLearn/Garden/1.png",
+          "/assets/StudentsLearn/Garden/2.png",
+          "/assets/StudentsLearn/Garden/3.png",
+          "/assets/StudentsLearn/Garden/4.png"
+        ]
+      }
+    ]
+  },
+  "ourSpecialFeatures": {
+    "title": "Our Special Features",
+    "description": "Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!",
+    "features": [
+      {
+        "title": "Thematic Learning",
+        "description": "Our curriculum is centered around engaging themes that integrate multiple subjects. Each theme incorporates skills and topics, making learning enjoyable and relevant.",
+        "icon": "/assets/OurSpecialFeatures/ThematicLearning.svg"
+      },
+      {
+        "title": "STEAM Education",
+        "description": "We offer innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that build problem-solving abilities, critical thinking, and hands-on skills.",
+        "icon": "/assets/OurSpecialFeatures/STEAMEducation.svg"
+      },
+      {
+        "title": "Language Immersion",
+        "description": "Through language immersion programs, children are exposed to a second language, enhancing their cognitive development and global awareness.",
+        "icon": "/assets/OurSpecialFeatures/LanguageImmersion.svg"
+      },
+      {
+        "title": "Art and Creativity",
+        "description": "Art is celebrated at Little Learners Academy. Our curriculum encourages creative expression, enabling students to explore ideas through a variety of materials and art forms.",
+        "icon": "/assets/OurSpecialFeatures/ArtAndCreativity.svg"
+      },
+      {
+        "title": "Outdoor Education",
+        "description": "Outdoor learning spaces provide opportunities for children to explore nature, fostering a deeper connection to the environment and a sense of wonder.",
+        "icon": "/assets/OurSpecialFeatures/OutdoorEducation.svg"
+      },
+      {
+        "title": "Play-Based Learning",
+        "description": "Play is an integral part of early childhood education. Our school incorporates purposeful play that promotes social development, critical thinking, and cooperative problem-solving.",
+        "icon": "/assets/OurSpecialFeatures/Play-BasedLearning.svg"
+      }
+    ]
+  }
+}

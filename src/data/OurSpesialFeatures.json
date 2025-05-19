@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Thematic Learning",
+    "description": "Our curriculum is centered around engaging themes that capture children's imaginations. Each theme integrates multiple subjects, making learning enjoyable and relevant.",
+    "icon": "/OurSpecialFeatures/ThematicLearning.svg"
+  },
+  {
+    "id": 2,
+    "title": "STEAM Education",
+    "description": "We offer innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that promote hands-on exploration, critical thinking, and problem-solving skills.",
+    "icon": "/OurSpecialFeatures/STEAMEducation.svg"
+  },
+  {
+    "id": 3,
+    "title": "Language Immersion",
+    "description": "Through language immersion programs, children have the opportunity to learn a second language, enhancing cognitive development and global awareness.",
+    "icon": "/OurSpecialFeatures/LanguageImmersion.svg"
+  },
+  {
+    "id": 4,
+    "title": "Art and Creativity",
+    "description": "Art is celebrated at Little Learners Academy. Our art-focused activities encourage self-expression, creativity, and the appreciation of various art forms.",
+    "icon": "/OurSpecialFeatures/ArtAndCreativity.svg"
+  },
+  {
+    "id": 5,
+    "title": "Outdoor Education",
+    "description": "Our expansive outdoor learning spaces provide a stimulating environment for children to explore nature, fostering a connection with the environment.",
+    "icon": "/OurSpecialFeatures/OutdoorEducation.svg"
+  },
+  {
+    "id": 6,
+    "title": "Play-Based Learning",
+    "description": "Play is an integral part of early childhood education. Our play-based approach enhances social skills, emotional development, and imaginative thinking.",
+    "icon": "/OurSpecialFeatures/Play-BasedLearning.svg"
+  }
+]
