@@ -42,7 +42,7 @@ const Navbar = () => {
             className="flex items-center border-r rounded-s-xl border-black pr-4 bg-orange-65"
           >
             <img src="/logo.svg" alt="" />
-            <p>LittleLearners</p>
+            <p className=" font-semibold">Little Learners</p>
           </Link>
         </div>
         <ul className=" w-1/2 justify-end h-full md:flex hidden">
