@@ -1,16 +1,15 @@
-import { useEffect, useRef, useState } from "react";
-import ContainerCard from "../components/Card/ContainerCard";
-import MainLayout from "../Layout/MainLayout";
-import { SubContainer } from "../UI/SubContainer";
-import AcademicsData from "../data/school_features_data.json";
-import CardContent from "../UI/CardContent";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ContainerCard from "../components/Card/ContainerCard";
 import DataAcademics from "../data/school_features_data.json";
+import MainLayout from "../Layout/MainLayout";
+import CardContent from "../UI/CardContent";
+import { SubContainer } from "../UI/SubContainer";
 // Import Swiper styles
 import "swiper/css";
-import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import RoomGallerySlider from "../UI/RoomGallerySlider";
+
 const CardStudentLearn = () => {
   return (
     <section className="flex p-[30px] lg:p-10 2xl:p-[50px] gap-[30px] col-span-3 md:col-span-1 lg:gap-10 2xl:gap-[50px] flex-col rounded-xl border-2 border-grey-15 bg-white shadow-[4px_4px_0_1px_#1e1e1e] 2xl:shadow-[6px_6px_0_2px_#1e1e1e] relative">
@@ -34,36 +33,16 @@ const CardStudentLearn = () => {
 };
 
 const Academics = () => {
-  const [OurSpesialFeatures, setOurSpesialFeatures] = useState([]);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState("All");
   const dataGallery = DataAcademics.ourRoomsGallery;
-  console.log("dataGallery", activeIndex);
-  const dataGallerySections = DataAcademics.ourRoomsGallery?.sections;
+  const dataStudentsLearn = DataAcademics.whatStudentsLearn;
 
-  console.log("dataGallery", dataGallery);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(AcademicsData);
-        const data = await response.json();
-        setOurSpesialFeatures(data);
-        console.log(response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchData();
-  }, []);
+  console.log("dataStudentsLearn", dataStudentsLearn);
 
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
-  // Delay render tombol custom agar Swiper bisa link dengan ref
-  useEffect(() => {
-    if (prevRef.current && nextRef.current) {
-      // dummy effect to force re-render
-    }
-  }, []);
+  const filteredSections =
+    activeIndex === "All"
+      ? dataGallery.sections
+      : dataGallery.sections.filter((section) => section.name === activeIndex);
   return (
     <MainLayout>
       <ContainerCard
@@ -150,72 +129,10 @@ const Academics = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="mt-[120px] grid grid-cols-3 gap-10 2xl:gap-[50px]">
-            <div className="flex col-span-3 md:col-span-3 flex-col relative">
-              {/* SLIDER */}
-              <div className="absolute top-[-20%] md:top-[-30%] left-1/2 -translate-x-1/2 transform w-full px-[30px] lg:px-10 z-10">
-                <Swiper
-                  modules={[Navigation]}
-                  navigation={{
-                    prevEl: prevRef.current,
-                    nextEl: nextRef.current,
-                  }}
-                  onInit={(swiper) => {
-                    // Connect tombol custom setelah Swiper inisialisasi
-                    swiper.params.navigation.prevEl = prevRef.current;
-                    swiper.params.navigation.nextEl = nextRef.current;
-                    swiper.navigation.init();
-                    swiper.navigation.update();
-                  }}
-                  spaceBetween={20}
-                  loop={true}
-                  breakpoints={{
-                    0: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                    1280: { slidesPerView: 4 },
-                  }}
-                  className="!pb-5  "
-                >
-                  {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((img, index) => (
-                    <SwiperSlide key={index}>
-                      <img
-                        src={img}
-                        alt="/assets/StudentsLearn/Classrooms/1.png"
-                        className="h-[200px] w-full object-cover rounded-[10px] border-2 border-grey-15"
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-
-              {/* CARD CONTENT */}
-              <div className="flex pt-[180px] px-[30px] lg:px-10 pb-[30px] flex-col gap-5 rounded-xl border-2 border-grey-15 bg-white shadow-[4px_4px_0_1px_#1e1e1e] 2xl:shadow-[6px_6px_0_2px_#1e1e1e]">
-                <div className="flex flex-col md:flex-row gap-5 md:justify-between md:items-center">
-                  <div className="flex gap-4 justify-center md:order-2">
-                    <button
-                      ref={prevRef}
-                      className="flex p-3 gap-[10px] rounded-md border-2 border-grey-20 bg-white"
-                    >
-                      <MdArrowBack className="w-6 h-6" />
-                    </button>
-                    <button
-                      ref={nextRef}
-                      className="flex p-3 gap-[10px] rounded-md border-2 border-grey-20 bg-white"
-                    >
-                      <MdArrowForward className="w-6 h-6" />
-                    </button>
-                  </div>
-                  <h3 className="text-grey-10 text-center font-raleway text-3xl 2xl:text-4xl font-bold">
-                    Classrooms
-                  </h3>
-                </div>
-                <p className="text-grey-30 md:text-left md:text-xl text-center font-outfit font-medium text-lg">
-                  Our well-equipped classrooms are designed to provide a
-                  nurturing and stimulating learning environment...
-                </p>
-              </div>
-            </div>
+          <div className="mt-[100px] grid grid-cols-3 gap-[100px] md:gap-[200px] 2xl:gap-[300px]">
+            {filteredSections.map((data, index) => (
+              <RoomGallerySlider data={data} key={index} />
+            ))}
           </div>
         </div>
 
