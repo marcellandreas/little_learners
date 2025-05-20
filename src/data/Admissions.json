@@ -1,0 +1,39 @@
+{
+  "feeStructure": [
+    {
+      "program": "Nursery",
+      "ageGroup": "2 – 3 Years",
+      "annualTuition": "$1,686",
+      "registrationFee": "$162",
+      "activityFee": "$12"
+    },
+    {
+      "program": "Pre – Kindergarten",
+      "ageGroup": "3 – 4 Years",
+      "annualTuition": "$2,686",
+      "registrationFee": "$220",
+      "activityFee": "$16"
+    },
+    {
+      "program": "Kindergarten",
+      "ageGroup": "4 – 5 Years",
+      "annualTuition": "$3,686",
+      "registrationFee": "$340",
+      "activityFee": "$20"
+    }
+  ],
+  "additionalServices": [
+    {
+      "service": "Before and After-School Care",
+      "fee": "$120 / per month"
+    },
+    {
+      "service": "Language Immersion Program",
+      "fee": "$60 / per semester"
+    },
+    {
+      "service": "Transportation (optional)",
+      "fee": "$80 / per month"
+    }
+  ]
+}

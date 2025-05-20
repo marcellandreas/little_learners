@@ -37,3 +37,15 @@
   width: 100px;
   height: 100px;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 43px;
+  background: var(--Grey-15, #262626);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 59px;
+  background: var(--Orange-75, #ffae80);
+}
