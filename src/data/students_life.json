@@ -1,0 +1,98 @@
+{
+  "extracurricularActivities": {
+    "title": "Extracurricular Activities",
+    "description": "At Little Learners Academy, we believe in nurturing well-rounded individuals. Our extracurricular activities offer a diverse range of experiences that complement our academic curriculum and encourage students to explore their interests and passions. We offer a wide array of extracurricular activities, including",
+    "subTitle": "Our Features",
+    "dataExtraCurricular": [
+      {
+        "icon": "BoltIcon",
+        "title": "Sports and Athletics",
+        "description": "Students can participate in various sports, from soccer and basketball to gymnastics and yoga. Sports help promote teamwork, physical fitness, and a sense of discipline."
+      },
+      {
+        "icon": "PaintBrushIcon",
+        "title": "Art and Creativity",
+        "description": "Our art classes and creative workshops provide a platform for students to express their creativity through painting, drawing, and other artistic forms."
+      },
+      {
+        "icon": "MusicalNoteIcon",
+        "title": "Music and Performing Arts",
+        "description": "Students can discover their musical talents through singing, playing musical instruments, and participating in drama and theater performances."
+      },
+      {
+        "icon": "PuzzlePieceIcon",
+        "title": "Language Clubs",
+        "description": "Language clubs offer an opportunity for students to immerse themselves in different languages and cultures, fostering global awareness."
+      },
+      {
+        "icon": "BeakerIcon",
+        "title": "Science Club",
+        "description": "The science club allows young scientists to explore the wonders of science through fun experiments and hands-on learning."
+      },
+      {
+        "icon": "SparklesIcon",
+        "title": "Cooking and Culinary Arts",
+        "description": "Cooking classes introduce students to the joys of preparing and tasting delicious and healthy meals."
+      }
+    ]
+  },
+  "studentSupport": {
+    "title": "Student Support",
+    "description": "At Little Learners Academy, we are committed to providing a supportive and nurturing environment that meets the unique needs of each student. Our student support services include",
+    "subTitle": "Our Achievements",
+    "dataSupport": [
+      {
+        "icon": "LightBulbIcon",
+        "title": "Counseling",
+        "description": "Professional counselors offer guidance and support to students, addressing their emotional and social well-being."
+      },
+      {
+        "icon": "BookOpenIcon",
+        "title": "Learning Support",
+        "description": "Our educators provide additional assistance to students who may require extra support in their academic journey."
+      },
+      {
+        "icon": "UserGroupIcon",
+        "title": "Parent-Teacher Communication",
+        "description": "We foster a strong partnership with parents to ensure seamless communication and mutual support in a child's development."
+      }
+    ]
+  },
+  "eventsCelebrations": {
+    "title": "Events & Celebrations",
+    "description": "At Little Learners Academy, we celebrate every milestone and create cherished memories for our students. Throughout the year, we host a variety of events and celebrations that bring the entire school community together. Some of our memorable events include",
+    "subTitle": "Our Features",
+    "data": [
+      {
+        "title": "Annual Sports Day",
+        "description": "A day filled with friendly competition, team spirit, and sportsmanship.",
+        "image": "/assets/eventsCelebrations/AnnualSportsDay.svg"
+      },
+      {
+        "title": "Cultural Festivals",
+        "description": "Celebrations of diverse cultural festivals, promoting cultural exchange and appreciation.",
+        "image": "/assets/eventsCelebrations/CulturalFestivals.svg"
+      },
+      {
+        "title": "Art Exhibitions",
+        "description": "Showcasing our students' artistic talents through exhibitions and displays.",
+        "image": "/assets/eventsCelebrations/ArtExhibitions.svg"
+      },
+      {
+        "title": "Science Fair",
+        "description": "A platform for budding scientists to present their innovative projects and experiments.",
+        "image": "/assets/eventsCelebrations/ScienceFair.svg"
+      },
+      {
+        "title": "International Day",
+        "description": "A vibrant celebration of our diverse community, embracing cultures from around the world.",
+        "image": "/assets/eventsCelebrations/InternationalDay.svg"
+      },
+      {
+        "title": "Graduation Ceremony",
+        "description": "A significant milestone as our Kindergarten students prepare to embark on their academic journey.",
+        "image": "/assets/eventsCelebrations/GraduationCeremony.svg"
+      }
+    ]
+  }
+}
