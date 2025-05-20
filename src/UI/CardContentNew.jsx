@@ -22,7 +22,7 @@ const CardContentNew = ({ classNameCard, icon, title, description }) => {
         <h2 className="text-grey-15 font-raleway text-[22px] lg:text-2xl 2xl:text-3xl leading-[130%] font-bold">
           {title}
         </h2>
-        <p className="text-grey-30 font-outfit text-base 2xl:text-xl font-medium">
+        <p className="text-grey-30 font-outfit text-base 2xl:text-xl font-medium line-clamp-4">
           {description}
         </p>
       </section>

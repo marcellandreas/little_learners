@@ -8,8 +8,33 @@ import CardContent from "../UI/CardContent";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import dataOurAchievements from "../data/OurAchievements.json";
 import CardContentNew from "../UI/CardContentNew";
+import { useEffect, useRef, useState } from "react";
+import { SwiperSlide, Swiper } from "swiper/react";
+
+import "swiper/css";
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
 
 const AboutUs = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const [swiperInstance, setSwiperInstance] = useState(null);
+
+  useEffect(() => {
+    if (
+      swiperInstance &&
+      prevRef.current &&
+      nextRef.current &&
+      swiperInstance.params
+    ) {
+      swiperInstance.params.navigation.prevEl = prevRef.current;
+      swiperInstance.params.navigation.nextEl = nextRef.current;
+
+      swiperInstance.navigation.destroy();
+      swiperInstance.navigation.init();
+      swiperInstance.navigation.update();
+    }
+  }, [swiperInstance, prevRef, nextRef]);
   return (
     <MainLayout>
       <ContainerCard
@@ -32,33 +57,61 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="flex flex-col gap-[50px] md:gap-20 2xl:gap-[100px] col-span-12">
+      <section className="flex flex-col  gap-[50px]  2xl:gap-[100px] col-span-12">
         <SubContainer
           heading="Our Achievements"
           title="Our Awards and Recognitions"
           description="Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students."
         />
         <div className="flex flex-col gap-[30px] lg:gap-10 2xl:gap-[50px]">
-          <div className="grid grid-cols-3 gap-10 xl:gap-[30px] 2xl:gap-10">
-            {dataOurAchievements.map((data) => (
-              <CardContentNew
-                key={data.id}
-                title={data.title}
-                description={data.description}
-                icon={data.icon}
-                classNameCard="col-span-3 md:col-span-1"
-              />
-            ))}
+          <div className="  gap-10 overflow-visible">
+            <Swiper
+              modules={[Navigation]}
+              onBeforeInit={(swiper) => {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+              }}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              onSwiper={setSwiperInstance}
+              spaceBetween={20}
+              loop={true}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {dataOurAchievements.map((data) => (
+                <SwiperSlide key={data.id}>
+                  <CardContentNew
+                    title={data.title}
+                    description={data.description}
+                    icon={data.icon}
+                    classNameCard="col-span-3 md:col-span-1 mt-14"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
+
           <div className="flex items-center justify-between">
             <p className=" text-grey-10 font-raleway text-lg 2xl:text-2xl font-bold">
               8 More Awards
             </p>
             <div className="flex gap-4">
-              <button className="p-3 rounded-md border-2 border-grey-20 bg-white">
+              <button
+                ref={prevRef}
+                className="p-3 rounded-md border-2 border-grey-20 bg-white"
+              >
                 <MdArrowBack className="w-6 h-6" />
               </button>
-              <button className="p-3 rounded-md border-2 border-grey-20 bg-white">
+              <button
+                ref={nextRef}
+                className="p-3 rounded-md border-2 border-grey-20 bg-white"
+              >
                 <MdArrowForward className="w-6 h-6" />
               </button>
             </div>
