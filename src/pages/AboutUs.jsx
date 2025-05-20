@@ -6,6 +6,8 @@ import teamMemberData from "../data/TeamMembers.json";
 import teamHistoryData from "../data/OurHistory.json";
 import CardContent from "../UI/CardContent";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import dataOurAchievements from "../data/OurAchievements.json";
+import CardContentNew from "../UI/CardContentNew";
 
 const AboutUs = () => {
   return (
@@ -38,9 +40,15 @@ const AboutUs = () => {
         />
         <div className="flex flex-col gap-[30px] lg:gap-10 2xl:gap-[50px]">
           <div className="grid grid-cols-3 gap-10 xl:gap-[30px] 2xl:gap-10">
-            <CardContent classNameCard="col-span-3 md:col-span-1" />
-            <CardContent classNameCard="col-span-3 md:col-span-1" />
-            <CardContent classNameCard="col-span-3 md:col-span-1" />
+            {dataOurAchievements.map((data) => (
+              <CardContentNew
+                key={data.id}
+                title={data.title}
+                description={data.description}
+                icon={data.icon}
+                classNameCard="col-span-3 md:col-span-1"
+              />
+            ))}
           </div>
           <div className="flex items-center justify-between">
             <p className=" text-grey-10 font-raleway text-lg 2xl:text-2xl font-bold">

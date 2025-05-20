@@ -1,0 +1,30 @@
+ {
+    "id": 4,
+    "title": "Community Engagement Award",
+    "description": "Presented by the Local Community Council for our active involvement in community service projects and partnerships that benefit both our students and the local community.",
+    "icon": "/vision.svg"
+  },
+  {
+    "id": 5,
+    "title": "Parent's Choice Award",
+    "description": "Voted by parents as the best early childhood education center in the region, recognizing our commitment to excellence in education and care.",
+    "icon": "/vision.svg"
+  },
+  {
+    "id": 6,
+    "title": "Best Practices in Child Development Award",
+    "description": "Awarded by the Child Development Association for our implementation of best practices in child development and early learning.",
+    "icon": "/vision.svg"
+  },
+  {
+    "id": 7,
+    "title": "Excellence in Diversity and Inclusion Award",
+    "description": "Recognized for our commitment to diversity, equity, and inclusion in early childhood education, ensuring that every child feels valued and respected.",
+    "icon": "/vision.svg"
+  },
+  {
+    "id": 8,
+    "title": "Innovative Curriculum Design Award",
+    "description": "Awarded for our innovative and engaging curriculum that promotes holistic development in young children.",
+    "icon": "/vision.svg"
+  }

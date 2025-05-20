@@ -11,6 +11,7 @@ import {
   ChartBarIcon,
   SunIcon,
   StarIcon,
+  ChartPieIcon,
 } from "@heroicons/react/20/solid";
 
 export const Icons = {
@@ -26,4 +27,5 @@ export const Icons = {
   ChartBarIcon,
   SunIcon,
   StarIcon,
+  ChartPieIcon,
 };

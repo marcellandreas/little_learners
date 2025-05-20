@@ -5,7 +5,9 @@ const CardContentNew = ({ classNameCard, icon, title, description }) => {
   const IconComponent = Icons[icon]; // Ambil icon dari map
 
   return (
-    <section className={`flex flex-col relative h-[280px] ${classNameCard}`}>
+    <section
+      className={`flex flex-col relative min-h-[280px] ${classNameCard}`}
+    >
       <div className="flex pl-6 -top-7 absolute">
         <div className="p-4 rounded-lg border-grey-15 bg-orange-90 border-2">
           {IconComponent ? (
