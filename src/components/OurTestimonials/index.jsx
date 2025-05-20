@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { SubContainer } from "../../UI/SubContainer";
+import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const TestimonialsData = [
   {
@@ -165,21 +166,21 @@ const OurTestimonials = () => {
           <button
             ref={prevRef}
             disabled={isPrevDisabled}
-            className={`absolute top-1/2 -translate-y-1/2 left-4 md:-left-20 z-10 bg-black text-white px-2 py-1 rounded ${
+            className={`absolute top-1/2 -translate-y-1/2 left-4 md:-left-20 z-10 bg-white  rounded-lg border-2 border-grey-20 p-3 2xl:p-[14px] ${
               isPrevDisabled ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
-            Prev
+            <MdArrowBack className="2xl:w-[30px] 2xl:h-[30px] w-6 h-6" />
           </button>
 
           <button
             ref={nextRef}
             disabled={isNextDisabled}
-            className={`absolute top-1/2 -translate-y-1/2 right-4 md:-right-20 z-10 bg-black text-white px-2 py-1 rounded ${
+            className={`absolute top-1/2 -translate-y-1/2 right-4 md:-right-20 z-10 bg-white  rounded-lg border-2 border-grey-20 p-3 2xl:p-[14px] ${
               isNextDisabled ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
-            Next
+            <MdArrowForward className="2xl:w-[30px] 2xl:h-[30px] w-6 h-6" />
           </button>
         </section>
       </section>
