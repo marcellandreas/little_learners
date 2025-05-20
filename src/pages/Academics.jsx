@@ -9,33 +9,13 @@ import { SubContainer } from "../UI/SubContainer";
 import "swiper/css";
 import "swiper/css/navigation";
 import RoomGallerySlider from "../UI/RoomGallerySlider";
-
-const CardStudentLearn = () => {
-  return (
-    <section className="flex p-[30px] lg:p-10 2xl:p-[50px] gap-[30px] col-span-3 md:col-span-1 lg:gap-10 2xl:gap-[50px] flex-col rounded-xl border-2 border-grey-15 bg-white shadow-[4px_4px_0_1px_#1e1e1e] 2xl:shadow-[6px_6px_0_2px_#1e1e1e] relative">
-      {/* shape */}
-      <div className="w-[93px] h-[65%] absolute top-0 left-1/2 -translate-x-1/2 transform rounded-b-xl border-x-2 border-x-grey-15 border-b-2  bg-orange-97" />
-      <img
-        src="/assets/StudentsLearn/LanguageArts.svg"
-        alt=""
-        className="z-50 rounded-xl border-2 border-grey-15 h-[191px] w-full object-cover"
-      />
-      <div className="flex flex-col gap-[10px]">
-        <h3 className=" text-grey-10 text-center font-raleway text-2xl font-bold">
-          Language Arts
-        </h3>
-        <p className=" text-grey-30 font-outfit text-center font-medium text-base">
-          Reading, writing, storytelling, and communication skills.
-        </p>
-      </div>
-    </section>
-  );
-};
+import CardStudentLearn from "../UI/CardStudentLearn";
 
 const Academics = () => {
   const [activeIndex, setActiveIndex] = useState("All");
   const dataGallery = DataAcademics.ourRoomsGallery;
   const dataStudentsLearn = DataAcademics.whatStudentsLearn;
+  const dataFeatures = DataAcademics.ourSpecialFeatures;
 
   console.log("dataStudentsLearn", dataStudentsLearn);
 
@@ -58,8 +38,14 @@ const Academics = () => {
           description="Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!"
         />
         <div className="grid grid-cols-3 gap-10 2xl:gap-[50px]">
-          {[1, 2, 3, 4, 5, 6].map((item, index) => (
-            <CardContent key={index} classNameCard="col-span-3 md:col-span-1" />
+          {dataFeatures.features.map((item, index) => (
+            <CardContent
+              title={item.title}
+              icon={item.icon}
+              description={item.description}
+              key={index}
+              classNameCard="col-span-3 md:col-span-1"
+            />
           ))}
         </div>
       </section>
@@ -71,12 +57,14 @@ const Academics = () => {
         />
         {/* flex flex-col  */}
         <div className="gap-10 grid grid-cols-3 2xl:gap-[50px]">
-          <CardStudentLearn />
-          <CardStudentLearn />
-          <CardStudentLearn />
-          <CardStudentLearn />
-          <CardStudentLearn />
-          <CardStudentLearn />
+          {dataStudentsLearn.subjects.map((item, index) => (
+            <CardStudentLearn
+              key={index}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+            />
+          ))}
         </div>
       </section>
       <section className="flex flex-col gap-[50px] lg:gap-20 2xl:gap-[100px] col-span-12">
