@@ -118,32 +118,32 @@
       {
         "title": "Thematic Learning",
         "description": "Our curriculum is centered around engaging themes that integrate multiple subjects. Each theme incorporates skills and topics, making learning enjoyable and relevant.",
-        "icon": "/assets/OurSpecialFeatures/ThematicLearning.svg"
+        "icon": "BookOpenIcon"
       },
       {
         "title": "STEAM Education",
         "description": "We offer innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that build problem-solving abilities, critical thinking, and hands-on skills.",
-        "icon": "/assets/OurSpecialFeatures/STEAMEducation.svg"
+        "icon": "ChartBarIcon"
       },
       {
         "title": "Language Immersion",
         "description": "Through language immersion programs, children are exposed to a second language, enhancing their cognitive development and global awareness.",
-        "icon": "/assets/OurSpecialFeatures/LanguageImmersion.svg"
+        "icon": "PuzzlePieceIcon"
       },
       {
         "title": "Art and Creativity",
         "description": "Art is celebrated at Little Learners Academy. Our curriculum encourages creative expression, enabling students to explore ideas through a variety of materials and art forms.",
-        "icon": "/assets/OurSpecialFeatures/ArtAndCreativity.svg"
+        "icon": "PaintBrushIcon"
       },
       {
         "title": "Outdoor Education",
         "description": "Outdoor learning spaces provide opportunities for children to explore nature, fostering a deeper connection to the environment and a sense of wonder.",
-        "icon": "/assets/OurSpecialFeatures/OutdoorEducation.svg"
+        "icon": "SunIcon"
       },
       {
         "title": "Play-Based Learning",
         "description": "Play is an integral part of early childhood education. Our school incorporates purposeful play that promotes social development, critical thinking, and cooperative problem-solving.",
-        "icon": "/assets/OurSpecialFeatures/Play-BasedLearning.svg"
+        "icon": "StarIcon"
       }
     ]
   }

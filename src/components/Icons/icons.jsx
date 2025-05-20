@@ -8,6 +8,9 @@ import {
   BookOpenIcon,
   UserGroupIcon,
   LightBulbIcon,
+  ChartBarIcon,
+  SunIcon,
+  StarIcon,
 } from "@heroicons/react/20/solid";
 
 export const Icons = {
@@ -20,4 +23,7 @@ export const Icons = {
   BookOpenIcon,
   UserGroupIcon,
   LightBulbIcon,
+  ChartBarIcon,
+  SunIcon,
+  StarIcon,
 };

@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import RoomGallerySlider from "../UI/RoomGallerySlider";
 import CardStudentLearn from "../UI/CardStudentLearn";
+import CardContentNew from "../UI/CardContentNew";
 
 const Academics = () => {
   const [activeIndex, setActiveIndex] = useState("All");
@@ -39,7 +40,7 @@ const Academics = () => {
         />
         <div className="grid grid-cols-3 gap-10 2xl:gap-[50px]">
           {dataFeatures.features.map((item, index) => (
-            <CardContent
+            <CardContentNew
               title={item.title}
               icon={item.icon}
               description={item.description}
