@@ -35,6 +35,23 @@ const AboutUs = () => {
       swiperInstance.navigation.update();
     }
   }, [swiperInstance, prevRef, nextRef]);
+
+  const dataMissionVision = [
+    {
+      id: 1,
+      title: "Mission",
+      description:
+        "At Little Learners Academy, our mission is to inspire a passion for learning and empower young minds to become confident, compassionate, and creative individuals. We strive to create a safe and inclusive space where children thrive academically, socially, and emotionally, setting the stage for a successful educational journey.",
+      icon: "/mission.svg",
+    },
+    {
+      id: 2,
+      title: "Vision",
+      description:
+        "Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity.",
+      icon: "/vision.svg",
+    },
+  ];
   return (
     <MainLayout>
       <ContainerCard
@@ -52,8 +69,14 @@ const AboutUs = () => {
             growth."
         />
         <div className="flex flex-col md:flex-row md:gap-10 2xl:gap-[60px] md:justify-between gap-[30px]">
-          <Card />
-          <Card />
+          {dataMissionVision.map((data) => (
+            <Card
+              key={data.id}
+              icon={data.icon}
+              title={data.title}
+              description={data.description}
+            />
+          ))}
         </div>
       </section>
 
