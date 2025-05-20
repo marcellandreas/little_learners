@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import Academics from "./pages/Academics";
 import StudentLife from "./pages/StudentLife";
 import Contacts from "./pages/Contacts";
+import Admissions from "./pages/Admissions";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/academics" element={<Academics />} />
       </Routes>
       <Routes>
-        <Route path="/admissions" element={<Academics />} />
+        <Route path="/admissions" element={<Admissions />} />
       </Routes>
       <Routes>
         <Route path="/student-life" element={<StudentLife />} />
