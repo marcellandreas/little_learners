@@ -117,7 +117,7 @@ const Footer = () => {
           ))}
         </section>
       </div>
-      <div className="col-span-12 bg-orange-65 flex flex-col   gap-4 lg:gap-5">
+      <div className="col-span-12  flex flex-col   gap-4 lg:gap-5">
         <hr className="h-[1px] w-full" />
         <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
           <div className="flex gap-[2px]">
