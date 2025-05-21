@@ -12,8 +12,11 @@ const Admissions = () => {
     "Activity Fee",
   ];
 
+  // Data Admission
   const TableData_1 = AdmissionsData.feeStructure;
   const TableData_2 = AdmissionsData.additionalServices;
+  const AddmissionProcessData = AdmissionsData.AdmissionProcess;
+
   return (
     <MainLayout>
       <ContainerCard
@@ -30,7 +33,7 @@ const Admissions = () => {
         />
         {/* cards */}
         <section className="grid grid-cols-3 md:gap-y-20 md:gap-x-10   2xl:gap-[50px]">
-          {[1, 2, 3, 4, 5, 6].map((item, index) => (
+          {AddmissionProcessData.data.map((item, index) => (
             <div
               key={index}
               className="flex flex-col items-center col-span-3 md:col-span-1 "
@@ -39,7 +42,7 @@ const Admissions = () => {
               <div className="flex flex-col">
                 <button className="flex py-[10px] px-6 items-center gap-[10px] rounded-lg border-2 border-grey-15 bg-white shadow-[4px_4px_0_1px_#1e1e1e] 2xl:shadow-[6px_6px_0_2px_#1e1e1e] ">
                   <span className=" text-grey-10 font-raleway text-4xl font-extrabold">
-                    0{item}
+                    0{index + 1}
                   </span>
                 </button>
                 <div className="flex h-[63px] flex-col items-center justify-center relative ">
@@ -54,17 +57,15 @@ const Admissions = () => {
                 </div>
               </div>
               {/* text container */}
-              <div className="flex p-[30px] flex-col gap-[14px] lg:gap-4 lg:p-10 2xl:gap-5 2xl:p-[50px] rounded-lg border-2 border-grey-15 bg-white shadow-[4px_4px_0_1px_#1e1e1e] 2xl:shadow-[6px_6px_0_2px_#1e1e1e]">
+              <div className="flex min-h-[260px] p-[30px] flex-col gap-[14px] lg:gap-4 lg:p-10 2xl:gap-5 2xl:p-[50px] rounded-lg border-2 border-grey-15 bg-white shadow-[4px_4px_0_1px_#1e1e1e] 2xl:shadow-[6px_6px_0_2px_#1e1e1e]">
                 <h3 className=" text-grey-10 font-raleway text-2xl lg:text-3xl 2xl:text-4xl font-bold">
-                  Inquiry
+                  {item.title}
                 </h3>
                 <p
                   className="text-grey-30 font-outfit text-base 2xl:text-xl
                  font-medium"
                 >
-                  Submit an inquiry form through our website or contact our
-                  admissions office to express your interest in Little Learners
-                  Academy.
+                  {item.description}
                 </p>
               </div>
               <div className="flex px-[6px] md:hidden w-2 flex-col -z-10  justify-center items-center flex-1 bg-orange-80 ">
