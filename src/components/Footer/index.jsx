@@ -49,7 +49,7 @@ const Footer = () => {
 
   return (
     <footer className=" w-[95%] mb-10 mx-auto grid grid-cols-12 gap-[30px] pt-[60px] lg:pt-20 2xl:pt-[100px] px-[30px] lg:px-20 2xl:px-[100px] pb-[30px] lg:pb-10 lg:gap-10 border-2 border-grey-15 rounded-xl bg-white shadow-[6px_6px_0_2px_#1e1e1e]">
-      <div className=" col-span-12 flex flex-col gap-10 bg-orange-65 md:grid md:grid-cols-8 ">
+      <div className=" col-span-12 flex flex-col gap-10  md:grid md:grid-cols-8 ">
         <section className="flex flex-col md:col-span-3 items-center gap-10">
           <article className="flex flex-col gap-10  ">
             <Link

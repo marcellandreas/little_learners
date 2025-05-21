@@ -1,0 +1,145 @@
+{
+  "Title": "Welcome to Little Learners Academy",
+  "subTitle": "Overview",
+  "description": "A leading kinder garden school dedicated to providing a nurturing and stimulating environment for young learners. With a commitment to excellence in early education, we believe in shaping curious minds and building a strong foundation for a lifelong love of learning. Our holistic approach fosters intellectual, social, emotional, and physical development, ensuring that each child reaches their full potential.",
+  "OurMissionVisions": {
+    "title": "Our Mission & Visions",
+    "subTitle": "Mission & Visions",
+    "description": "We are here to provide a nurturing and inclusive environment where young minds can thrive, fostering a love for learning and personal growth.",
+    "data": [
+      {
+        "id": 1,
+        "title": "Mission",
+        "icon": "/mission.svg",
+        "description": "At Little Learners Academy, our mission is to inspire a passion for learning and empower young minds to become confident, compassionate, and creative individuals. We strive to create a safe and inclusive space where children thrive academically, socially, and emotionally, setting the stage for a successful educational journey."
+      },
+      {
+        "id": 2,
+        "title": "Vision",
+        "icon": "/vision.svg",
+        "description": "Our vision is to be a leading early childhood education center that nurtures the whole child, fostering a love for learning and a sense of belonging. We envision a future where every child is equipped with the skills, knowledge, and values needed to navigate an ever-changing world, becoming lifelong learners and responsible global citizens."
+      }
+    ]
+  },
+  "OurAwardsAndRecognitions": {
+    "title": "Our Awards and Recognitions",
+    "subTitle": "Our Achievements",
+    "description": "Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students.",
+    "data": [
+      {
+        "id": 1,
+        "title": "Outstanding Early Childhood Education Awar",
+        "description": "Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.",
+        "icon": "ChartPieIcon"
+      },
+      {
+        "id": 2,
+        "title": "Innovative STEAM Education Award",
+        "description": "Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners.",
+        "icon": "ChartBarIcon"
+      },
+      {
+        "id": 3,
+        "title": "Environmental Stewardship Award",
+        "description": "Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.",
+        "icon": "LightBulbIcon"
+      },
+      {
+        "id": 4,
+        "title": "Environmental Stewardship Award",
+        "description": "Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.",
+        "icon": "LightBulbIcon"
+      },
+      {
+        "id": 5,
+        "title": "Environmental Stewardship Award",
+        "description": "Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.",
+        "icon": "LightBulbIcon"
+      }
+    ]
+  },
+  "OurHistory": {
+    "title": "Our History",
+    "subTitle": "Our Progressive Journey",
+    "description": "Founded with a passion for early education in 2005, our kindergarten school boasts a rich history of empowering young learners to reach their potential through innovative teaching methods and a supportive learning environment",
+    "history": [
+      {
+        "id": 1,
+        "title": "Resilience and Future Horizons",
+        "description": "Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow.",
+        "year": 2023,
+        "icon": "/vision.svg"
+      },
+      {
+        "id": 2,
+        "title": "A Legacy of Excellence",
+        "description": "Over the years, we have built a legacy of excellence in early childhood education. Our commitment to nurturing young minds and fostering a love for learning has made us a trusted partner for families in our community.",
+        "year": 2017,
+        "icon": "/vision.svg"
+      },
+      {
+        "id": 3,
+        "title": "Innovative Approaches to Learning",
+        "description": "We have embraced innovative approaches to learning, integrating technology and hands-on experiences into our curriculum. This has allowed us to create engaging and interactive learning environments that inspire curiosity and creativity.",
+        "year": 2015,
+        "icon": "/vision.svg"
+      },
+      {
+        "id": 4,
+        "title": "Community Partnerships",
+        "description": "Building strong partnerships with local organizations and families has been a cornerstone of our success. Together, we have created a supportive network that enhances the educational experience for our children.",
+        "year": 2012,
+        "icon": "/vision.svg"
+      }
+    ]
+  },
+  "OurTeamMembers": {
+    "title": "Our Team Members",
+    "subTitle": "Our Teachers With Experties",
+    "description": "At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning.",
+    "team": [
+      {
+        "id": 1,
+        "name": "Ms. Sarah Anderson",
+        "profileImage": "/assets/teamMembers/sarah.png",
+        "qualification": "Founder & Director",
+        "description": "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment where children feel comfortable to explore and learn."
+      },
+      {
+        "id": 2,
+        "name": "Mr. James Thompson",
+        "profileImage": "/assets/teamMembers/david.png",
+        "qualification": "Lead Teacher",
+        "description": "Mr. James is a dedicated teacher who specializes in early childhood education. He believes in fostering creativity and critical thinking in children through hands-on learning experiences."
+      },
+      {
+        "id": 3,
+        "name": "Ms. Emily Johnson",
+        "profileImage": "/assets/teamMembers/emily.png",
+        "qualification": "Assistant Teacher",
+        "description": "Ms. Emily is known for her patience and kindness. She works closely with children to support their individual learning needs and helps them develop social skills through play."
+      },
+      {
+        "id": 4,
+        "name": "Mr. David Brown",
+        "profileImage": "/assets/teamMembers/michael.png",
+        "qualification": "Special Education Teacher",
+        "description": "Mr. David is a certified special education teacher with a passion for inclusive education. He works with children of all abilities to ensure that every child has the opportunity to thrive."
+      },
+      {
+        "id": 5,
+        "name": "Ms. Laura Wilson",
+        "profileImage": "/assets/teamMembers/jessica.png",
+        "qualification": "Curriculum Coordinator",
+        "description": "Ms. Laura is responsible for developing and implementing our curriculum. She is dedicated to creating engaging and developmentally appropriate learning experiences for all children."
+      },
+      {
+        "id": 6,
+        "name": "Mr. Michael Smith",
+        "profileImage": "/assets/teamMembers/william.png",
+        "qualification": "Physical Education Teacher",
+        "description": "Mr. Michael is an enthusiastic physical education teacher who promotes healthy lifestyles through fun and active play. He encourages children to develop their motor skills and teamwork abilities."
+      }
+    ]
+  }
+}

@@ -1,24 +1,27 @@
+import { useEffect, useRef, useState } from "react";
+import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../components/Card/Card";
 import ContainerCard from "../components/Card/ContainerCard";
+import dataAboutPage from "../data/about_page_data.json";
 import MainLayout from "../Layout/MainLayout";
-import { SubContainer } from "../UI/SubContainer";
-import teamMemberData from "../data/TeamMembers.json";
-import teamHistoryData from "../data/OurHistory.json";
-import CardContent from "../UI/CardContent";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
-import dataOurAchievements from "../data/OurAchievements.json";
 import CardContentNew from "../UI/CardContentNew";
-import { useEffect, useRef, useState } from "react";
-import { SwiperSlide, Swiper } from "swiper/react";
+import { SubContainer } from "../UI/SubContainer";
 
 import "swiper/css";
-import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 
 const AboutUs = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [swiperInstance, setSwiperInstance] = useState(null);
+
+  // Data Json
+  const MissionVisionData = dataAboutPage.OurMissionVisions;
+  const HistoryData = dataAboutPage.OurHistory;
+  const AchievementsData = dataAboutPage.OurAwardsAndRecognitions;
+  const TeamMemberData = dataAboutPage.OurTeamMembers;
 
   useEffect(() => {
     if (
@@ -36,22 +39,6 @@ const AboutUs = () => {
     }
   }, [swiperInstance, prevRef, nextRef]);
 
-  const dataMissionVision = [
-    {
-      id: 1,
-      title: "Mission",
-      description:
-        "At Little Learners Academy, our mission is to inspire a passion for learning and empower young minds to become confident, compassionate, and creative individuals. We strive to create a safe and inclusive space where children thrive academically, socially, and emotionally, setting the stage for a successful educational journey.",
-      icon: "/mission.svg",
-    },
-    {
-      id: 2,
-      title: "Vision",
-      description:
-        "Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity.",
-      icon: "/vision.svg",
-    },
-  ];
   return (
     <MainLayout>
       <ContainerCard
@@ -69,9 +56,9 @@ const AboutUs = () => {
             growth."
         />
         <div className="flex flex-col md:flex-row md:gap-10 2xl:gap-[60px] md:justify-between gap-[30px]">
-          {dataMissionVision.map((data) => (
+          {MissionVisionData?.data.map((data, i) => (
             <Card
-              key={data.id}
+              key={i}
               icon={data.icon}
               title={data.title}
               description={data.description}
@@ -107,7 +94,7 @@ const AboutUs = () => {
                 1024: { slidesPerView: 3 },
               }}
             >
-              {dataOurAchievements.map((data) => (
+              {AchievementsData?.data.map((data) => (
                 <SwiperSlide key={data.id}>
                   <CardContentNew
                     title={data.title}
@@ -158,7 +145,7 @@ const AboutUs = () => {
           {/* cards */}
           <div className="flex flex-col  items-start gap-[50px] lg:gap-[80px] 2xl:gap-[100px] flex-1">
             {/* card */}
-            {teamHistoryData.map((item) => (
+            {HistoryData?.history.map((item) => (
               <div className="flex flex-col justify-center   items-start gap-[30px]">
                 <div className="flex items-center ml-[-20px] ">
                   <div className="flex w-[62px] h-5 items-center">
@@ -201,7 +188,7 @@ const AboutUs = () => {
           description="At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning."
         />
         <div className="flex flex-col md:grid md:grid-cols-12 gap-10 2xl:gap-[50px]">
-          {teamMemberData.map((dataMember, index) => (
+          {TeamMemberData.team.map((dataMember, index) => (
             <div
               key={index}
               className="flex flex-col p-[30px] md:p-10 2xl:p-[50px] gap-6 2xl:gap-[30px] rounded-xl border-2 border-grey-15 bg-white shadow-[4px_4px_0px_1px_#1E1E1E] md:col-span-6"
