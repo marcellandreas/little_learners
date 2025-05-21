@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/20/solid";
 import { PhoneArrowDownLeftIcon } from "@heroicons/react/24/outline";
@@ -49,11 +48,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="grid mb-10  lg:mx-10 lg:w-auto mx-auto w-[95%] pd:px-20 px-[30px]  gap-[30px] lg:gap-10 2xl:gap-[50px] pt-[60px] 2xl:pt-[100px] lg:pt-20 lg:pb-10 rounded-xl border-2 border-grey-15 bg-white shadow-[6px_6px_0px_1px_#1E1E1E]">
-      <div className=" col-span-6 flex flex-col  gap-10 lg:gap-20  lg:grid lg:grid-cols-12">
-        <section className="flex  lg:col-span-5  flex-col items-center gap-10">
-          <article className="flex flex-col gap-10">
-            <Link to="/" className="flex items-center gap-4">
+    <footer className=" w-[95%] mb-10 mx-auto grid grid-cols-12 gap-[30px] pt-[60px] lg:pt-20 2xl:pt-[100px] px-[30px] lg:px-20 2xl:px-[100px] pb-[30px] lg:pb-10 lg:gap-10 border-2 border-grey-15 rounded-xl bg-white shadow-[6px_6px_0_2px_#1e1e1e]">
+      <div className=" col-span-12 flex flex-col gap-10 bg-orange-65 md:grid md:grid-cols-8 ">
+        <section className="flex flex-col md:col-span-3 items-center gap-10">
+          <article className="flex flex-col gap-10  ">
+            <Link
+              to="/"
+              className="flex items-center justify-center md:justify-normal  gap-4"
+            >
               <img
                 src="/logo.svg"
                 alt="Little Learners Logo"
@@ -92,13 +94,13 @@ const Footer = () => {
             })}
           </article>
         </section>
-        <section className="grid grid-cols-8  lg:col-span-7 gap-[30px] lg:gap-5 ">
+        <section className="grid grid-cols-4 md:col-span-5 gap-[30px]">
           {MenuFooter.map((section) => (
             <div
               key={section.id}
-              className=" col-span-4 lg:col-span-2 flex flex-col gap-5"
+              className="col-span-2 md:col-span-1  flex flex-col gap-5"
             >
-              <p className=" text-grey-15 font-outfit text-base font-semibold">
+              <p className=" text-grey-15 font-outfit text-base 2xl:text-xl font-semibold">
                 {section.Title}
               </p>
               <div className=" text-grey-20 lg:flex lg:gap-4 2xl:text-xl lg:flex-col text-base font-medium cursor-pointer ">
@@ -115,7 +117,7 @@ const Footer = () => {
           ))}
         </section>
       </div>
-      <div className="col-span-6 flex flex-col   gap-4 lg:gap-5">
+      <div className="col-span-12 bg-orange-65 flex flex-col   gap-4 lg:gap-5">
         <hr className="h-[1px] w-full" />
         <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
           <div className="flex gap-[2px]">
